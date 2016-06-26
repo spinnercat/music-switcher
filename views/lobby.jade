@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Welcome #{username}
+  p Please select or create a room
+  br
+  each room in rooms
+    p= room.name
